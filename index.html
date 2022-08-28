@@ -1,1 +1,62 @@
-I am comming from an HTML file. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMN Store</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config =  {
+            theme: {
+              extend: {
+                // ...
+              },
+            },
+          }
+      </script>
+</head>
+<body class="bg-[#dbe1e8] text-gray-700">
+    <main class="max-w-screen-lg mx-auto">
+        <div class="p-5 rounded-b-lg bg-gradient-to-r from-[#fa8142] to-[#ff4088] text-white shadow-sm">
+            <h1 class="text-3xl font-bold mb-2">Binary Minds Nepal (BNM)</h1>
+            <p class="font-mono uppercase font-bold">Understand The Depth</p>
+        </div>
+        <div class="text-center my-8 text-gray-800">
+            <h1 class="text-2xl font-bold font-mono mb-2">First in class paid cources</h1>
+            <p class="uppercase font-semibold">The best of what BMN offers</p>
+        </div>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex flex-col gap-5 border border-gray-700 p-4 rounded-lg bg-gray-700 text-white hover:shadow-md hover:shadow-pink-400">
+              <img class="aspect-video rounded-lg" src="https://fireship.io/courses/vscode-tricks/img/featured.jpg" alt="">
+            <div class="grow">
+              <div class="flex">
+              <h1 class="text-2xl font-semibold grow">NBL Computer Course</h1>
+              </div>
+              <p class="line-clamp-3 text-gray-50 my-2 mb-8">In this course we'll fix, together, that bad posture that's been causing you stress, headaches, and overall discomfort</p>
+            </div>
+            <button class="flex items-center w-full py-3 px-5 bg-gradient-to-r from-[#fa8142] to-[#ff4088] rounded text-white font-semibold">
+              <div class="font-mono font-bold">Buy Now</div>
+              <div class="ml-auto font-mono text-xl">Rs. 250</div>
+            </button>
+          </div>
+         
+         <div class="flex flex-col gap-5 border p-4 rounded-lg text-gray-700 bg-white hover:shadow-md hover:shadow-purple-300">
+              <img class="aspect-video rounded-lg" src="https://fireship.io/lessons/firebase-quickstart/img/featured.jpg" alt="">
+            <div>
+              <div class="flex">
+              <h1 class="text-2xl font-semibold grow">ADBl Computer Notes</h1>
+              </div>
+              <p class="line-clamp-3 text-gray-500  my-2 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga sed, debitis dolores maxime optio excepturi, reprehenderit vitae autem fugiat velit repellat modi similique harum, totam accusantium non ea tenetur?</p>
+              <div class="">
+              <button class="flex items-center w-full py-3 px-5 bg-gradient-to-r from-[#fa8142] to-[#ff4088] rounded text-white font-semibold">
+                <div class="font-mono font-bold">Buy Now</div>
+                <div class="ml-auto font-mono text-xl">Rs. 250</div>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
