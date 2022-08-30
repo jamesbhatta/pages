@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script>
@@ -138,6 +141,20 @@
             },
           }
       </script>
+
+      <style type="text/tailwindcss">
+        body {
+          font-family: 'Poppins', sans-serif;
+        }
+        @layer base {
+          label {
+            @apply text-sm mb-2;
+          }
+          [type=text] {
+            @apply w-full py-3 px-4 rounded border-gray-300 focus:ring focus:ring-green-400 focus:border-transparent focus:outline-none;
+          }
+        }
+      </style>
 </head>
 <body class="bg-gray-100 [#f6f7ff] text-gray-700">
     <main class="max-w-screen-sm mx-auto">
@@ -187,6 +204,32 @@
                     </div>
                 </section>
             </template>
+        </div>
+
+        <!-- New item form -->
+        <form class="p-4 bg-white min-h-screen">
+          <div class="text-center pb-3">
+            <h3 class="font-semibold">Add New Item</h3>
+          </div>
+          <div class="mb-3">
+            <label class="block">Item Name</label>
+            <input type="text" class="" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label class="block">Price</label>
+            <input type="text" class="" placeholder="Rs.">
+          </div>
+          <div class="mb-3">
+            <label class="block">Note</label>
+            <input type="text" class="">
+          </div>
+          <div class="mb-3">
+            <label class="block">Photo</label>
+            <input type="file" class="block w-full border p-3 px-4 rounded border-gray-300">
+          </div>
+          <div class="mb-3">
+            <button class="py-3 px-4 text-center w-full bg-green-500 text-white rounded">Save</button>
+          </div>
         </div>
     </main>
 
